@@ -10,7 +10,7 @@ class FARule < Struct.new(:state, :character, :next_state)
   def inspect
     "#<FARule #{state.inspect} --#{character}--> #{next_state.inspect}>"
   end
- end
+end
 
 class DFARulebook < Struct.new(:rules)
   def next_state(state, character)
