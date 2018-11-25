@@ -1,8 +1,3 @@
-require_relative '../finite_automata/fa_rule'
-require_relative '../finite_automata/nfa_design'
-require_relative '../finite_automata/nfa_rulebook'
-require_relative 'pattern'
-
 class Literal < Struct.new(:character)
   include Pattern
 

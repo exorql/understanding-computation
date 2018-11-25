@@ -1,7 +1,3 @@
-require_relative '../finite_automata/nfa_design'
-require_relative '../finite_automata/nfa_rulebook'
-require_relative 'pattern'
-
 class Empty
   include Pattern
 
