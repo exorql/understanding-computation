@@ -23,4 +23,3 @@ class Literal < Struct.new(:character)
     NFADesign.new(start_state, [accept_state], rulebook)
   end
 end
-
