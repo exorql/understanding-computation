@@ -16,9 +16,9 @@ class Repeat < Struct.new(:pattern)
     accept_states = pattern_nfa_design.accept_states + [start_state]
     rules = pattern_nfa_design.rulebook.rules
     extra_rules =
-      pattern_nfa_design.accept_states.map { |accept_state|
+      pattern_nfa_design.accept_states.map do |accept_state|
         FARule.new(accept_state, nil, pattern_nfa_design.start_state)
-      } +
+      end +
       [FARule.new(start_state, nil, pattern_nfa_design.start_state)]
     rulebook = NFARulebook.new(rules + extra_rules)
 
