@@ -1,1 +1,2 @@
 # understanding-computation
+アンダースタンディングコンピュテーションの読書記録
